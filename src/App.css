@@ -1,0 +1,1464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
+ul li {
+  list-style: none;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  --1rem-in-vh: 1.949vh;
+  --1_125rem-in-vh: 2.192vh;
+  --2rem-in-vh: 3.898vh;
+  --1rem-in-vw: 1.111vw;
+  --2rem-in-vw: 2.222vw;
+}
+
+/* --------------------- 1. NAV --------------------- */
+/* ---------- 1.1. Nav menu ---------- */
+.nav-menu {
+  background-color: rgba(255, 255, 255, 1);
+  height: 90vh;
+  width: 100vw;
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 9998;
+  transition: all ease-out 400ms;
+}
+
+/* ----- 1.1.1. Categories ----- */
+.nav-menu li {
+  height: 50%;
+  width: 50%;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu li:nth-child(1) {
+  border-right: solid rgba(0,0,0,1);
+  border-bottom: solid rgba(0,0,0,1);
+  display: none;
+}
+
+.nav-menu li:nth-child(2) {
+  border-right: solid rgba(0,0,0,1);
+  border-bottom: solid rgba(0,0,0,1);
+}
+
+.nav-menu li:nth-child(3) {
+  border-right: solid rgba(0,0,0,1);
+  border-top: solid rgba(0,0,0,1);
+}
+
+.nav-menu li:nth-child(4) {
+  border-left: solid rgba(0,0,0,1);
+  border-bottom: solid rgba(0,0,0,1);
+  display: none;
+}
+
+.nav-menu li:nth-child(5) {
+  border-left: solid rgba(0,0,0,1);
+  border-bottom: solid rgba(0,0,0,1);
+}
+
+.nav-menu li:nth-child(6) {
+  border-left: solid rgba(0,0,0,1);
+  border-top: solid rgba(0,0,0,1);
+}
+
+/* ----- 1.1.2. Categories content ----- */
+.nav-menu h2 {
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+/* ----- 1.1.3. Animation ----- */
+.js-nav-menu {
+  margin: -100vh 0 0 0;
+}
+
+/* ---------- 1.2. Nav bar ---------- */
+.nav-bar {
+  background-color: rgba(255, 255, 255, 1);
+  height: 10vh;
+  width: 100vw;
+  padding: 0 5%;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+/* ----- 1.2.1. Content ----- */
+.logo-website {
+  text-decoration: underline wavy rgba(250, 210, 77, 1)
+}
+
+.nav-bar div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar div a button {
+  background-color: rgba(1,102,255,255);
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-bar div a:first-child button {
+  background-color: transparent;
+  color: rgba(0,0,0,1);
+  font-weight: 700;
+}
+
+.hamburger {
+  height: 2.875rem;    ;
+  margin: 0 0 0 2rem;
+  cursor: pointer;
+}
+
+/* --------------------- 2. MAIN ---------------------  */
+main {
+  margin: 10vh 0 0 0;
+}
+
+/* --------------------- 2.1. HOME --------------------- */
+.home-no-scroll {
+  height: 90vh;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  padding: 2.5%;
+  gap: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- 2.1.1. Cards ---------- */
+.card-home {
+  height: 48.75%;
+  width: 49.5%;
+  border-radius: 3rem; 
+}
+
+.card-home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card-home h2 {
+  font-size: var(--2rem-in-vh);
+}
+
+.card-home h3 {
+  font-size: var(--1_125rem-in-vh);
+}
+
+.card-home p {
+  font-size: var(--1_125rem-in-vh);
+}
+
+/* ----- 2.1.1.1. Card 1 ----- */
+.card-home-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline {
+  text-decoration: wavy underline;
+}
+
+/* ----- 2.1.1.2. Card 2 ----- */
+.card-home-2 {
+  gap: 1%;
+  display: flex;
+}
+
+.card-home-2 p {
+  font-size: var(--1rem-in-vh);
+}
+
+.card-home-2 article:nth-child(1) {
+  background-color: rgba(245, 161, 168, 1);
+  height: 100%;
+  width: 66.1%;
+  padding: 7.5%;
+  border-radius: 3rem; 
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-home-2 article:nth-child(1) figure {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.img-home-comment-xl {
+  background-image:url(../public/assets/img/img-funder.jpeg);
+  background-position: 75% 50%;
+  background-size: cover;
+  width: 32.8%;
+  border-radius: 45%; 
+  border: dashed 0.5rem white;
+}
+
+.img-home-comment-xs {
+  height: 5rem;
+  border-radius: 50%;
+  display: none;
+}
+
+/* ----- 2.1.1.3. Card 3 ----- */
+.card-home-3 {
+  background-color: rgba(250, 210, 77, 1);
+  padding: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picto-arrow-1 {
+  height: 2.875rem;
+  cursor: pointer;
+}
+
+.picto-arrow-1-2 {
+  rotate: 180deg;
+}
+
+.card-home-3 a {
+  height: 100%;
+}
+
+.card-home-3 figure {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-home-article {
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* ----- 2.1.1.4. Card 4 ----- */
+.card-home-4 {
+  background-color: rgba(1,102,255,255);
+  padding: 5%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.picto-go {
+  height: 3rem;
+  width: auto;
+  object-fit: contain;
+  align-self: flex-end;
+}
+
+/* --------------------- 2.2. REGISTER --------------------- */
+.register {
+  width: 100%;
+  padding: 2.5% 5%;
+  gap: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* ---------- 2.2.1. Form ---------- */
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-register legend {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.form-register label {
+  max-width: 30rem;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-register select,
+.form-register input {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.form-register textarea {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+/* ----- 2.2.1.1. Salutations -----  */
+.form-register-salutations {
+  display: flex;
+}
+
+.form-register-salutations div {
+  display: flex;
+  align-items: center;
+}
+
+.form-register-salutations div label {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+
+.form-register-salutations div input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  margin: 0 1.5rem 1rem 0.33rem;
+}
+
+/* ----- 2.2.1.2. Newsletter -----  */
+.form-register-newsletter  {
+  max-width: 30rem;
+  width: 100%;
+  margin: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-register-newsletter input {
+  flex: 1;
+  height: 1rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.form-register-newsletter label {
+flex: 9;
+}
+
+/* ----- 2.2.1.3. Submit ----- */
+.form-register input[type=submit] {
+  background-color: rgba(1,102,255,255);
+  width: fit-content;
+  margin: 1.5rem 0 0 0;
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* ----- 2.2.1.4. Error message ----- */
+.error-message {
+  color: rgba(255, 0, 0, 1)
+  ;
+  max-width: 30rem;
+  display: block;
+}
+
+/* ---------- 2.2.2. Newsletter ---------- */
+.cta-newsletter {
+  background-color: rgba(250, 210, 77, 1);
+  height: max-content;
+  max-width: 30rem;
+  width: 100%;
+  gap: 1rem;
+  border-radius: 3rem; 
+  padding: 2rem 1.25rem 4rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.cta-newsletter figure {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cta-newsletter h2 {
+  margin: 0 0 0 -25%;
+  font-size: 2.5rem;
+}
+
+.cta-newsletter p {
+  font-size: 1.25rem;
+}
+
+.picto-flower {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* --------------------- 2.3. LOGIN --------------------- */
+.login-no-scroll {
+  height: 90vh;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ---------- 2.3.1. Login form ---------- */
+.form-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-login label {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-login select {
+  max-width: 13rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.form-login input {
+  max-width: 25rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.form-login input[type=submit] {
+  background-color: rgba(1,102,255,255);
+  width: fit-content;
+  margin: 1rem 0;
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  align-self: center;
+  cursor: pointer;
+}
+
+.picto-sun {
+  width: 15rem;
+  position: absolute;
+  top: 15%;
+  left: 26%;
+  z-index: -1;
+}
+
+.login p {
+  margin: 1.5rem 0 0 0;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.5rem;
+}
+
+.login p a {
+  text-decoration: underline;
+}
+
+/* --------------------- 2.4. ABOUT US --------------------- */
+.aboutus-no-scroll {
+  height: 90vh;
+}
+
+.aboutus {
+  height: 100%;
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutus h1 {
+  font-size: 3rem;
+}
+
+/* ---------- 2.4.1. Prentation ---------- */
+.aboutus article:nth-child(1) p {
+  max-width: 37rem;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.aboutus article:nth-child(1) p a {
+  text-decoration: underline;
+}
+
+.aboutus article:nth-child(2) h4 {
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+.list-employees {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list-employees li {
+  margin: 0 var(--2rem-in-vw);
+  font-size: 1.25rem;
+}
+
+.list-employees li figure {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employee {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* --------------------- 2.5. DEGREES --------------------- */
+.degrees {
+  height: 100%;
+  width: 100%;
+  padding: 2.5% 5%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.degrees h1 {
+  font-size: 3rem;
+  margin: 0.33em 0;
+}
+
+/* ---------- 2.5.1. Search form ---------- */
+.form-search-degrees {
+  height: 4rem;
+  width: 40rem;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: rgba(26, 26, 26, 0.08) 0px -1px 4px 0px, rgba(26, 26, 26, 0.12) 0px 4px 8px 0px;  
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-search-degrees article {
+  display: flex;
+}
+
+.form-search-degrees select {
+  padding: 0.5% 1%;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.form-search-degrees input {
+  background-color: transparent;
+  border: solid rgba(0,0,0,1) 1px;
+  border-radius: 0.5rem;
+  width: 45%;
+  padding: 1%;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+/* ---------- 2.5.2. List of degrees ---------- */
+.list-degrees {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ----- 2.5.2.1. Degree card ----- */
+.card-degree {
+  width: 20rem;
+  border: solid rgba(26, 26, 26, 0.12) 2px;
+  border-radius: 3rem;
+  padding: 1.5rem;
+}
+
+.card-degree h3 {
+  font-weight: 600;
+}
+
+.card-degree a {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-degree a figure {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-degree a ul li {
+  margin: 0 0 0 1.25rem;
+  list-style: disc;
+}
+
+.card-degree span {
+  font-weight: 500;
+}
+
+.logo-degrees-school {
+  height: 4.5rem;
+  width: auto;
+  object-fit: cover;
+}
+
+/* --------------------- 2.6. DEGREE --------------------- */
+.degree {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.degree h2 {
+  margin: 0 0 0.25rem 0;
+}
+
+/* ---------- 2.6.1. Title ---------- */
+.degree > figure h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.degree > figure {
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-degree-school {
+  height: 10rem;
+  width: auto;
+  object-fit: cover;
+}
+
+/* ---------- 2.6.2. Informations ---------- */
+.list-degree-infos {
+  width: 100%;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-degree-info {
+  max-width: 25rem;
+  /* border: solid rgba(236,236,235,1) 2px; */
+  border-radius: 2rem;
+  padding: 2.5%;
+}
+
+.card-degree-info p {
+  font-size: 1.25rem;
+}
+
+.card-degree-info li {
+  font-size: 1.25rem;
+  margin: 0 0 0 1.5rem;
+  list-style: disc;
+}
+
+.card-degree-info ul li {
+  margin: 0 0 0 3rem;
+  list-style: circle;
+}
+
+/* ---------- 2.6.3. Comments ---------- */
+.comments-section-degree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-degree-comments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-degree-comment {
+  background-color: rgba(236,236,235,1);
+  width: 20rem;
+  gap: 0.66rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-degree-comment figure {
+  display: flex;
+  align-items: center;
+}
+
+.img-degree-comment {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 50%;
+  margin: 0 0.25rem 0 0;
+  object-fit: cover;
+}
+
+/* --------------------- 2.7. JOBS --------------------- */
+.jobs {
+  height: 100%;
+  width: 100%;
+  padding: 2.5% 5%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobs h1 {
+  font-size: 3rem;
+  margin: 0.33em 0;
+}
+
+/* ---------- 2.7.1. Search form ---------- */
+.form-search-jobs {
+  height: 4rem;
+  width: 33rem;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: rgba(26, 26, 26, 0.08) 0px -1px 4px 0px, rgba(26, 26, 26, 0.12) 0px 4px 8px 0px;  
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-search-jobs select {
+  padding: 0.5% 1%;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.form-search-jobs input {
+  background-color: transparent;
+  border: solid rgba(0,0,0,1) 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  padding: 1%;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+/* ---------- 2.7.2. List of jobs ---------- */
+.list-jobs {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ----- 2.7.2.1. Job card ----- */
+.card-job {
+  width: 20rem;
+  border: solid rgba(26, 26, 26, 0.12) 2px;
+  border-radius: 3rem;
+  padding: 1.5rem;
+}
+
+.card-job h3 {
+  font-weight: 600;
+}
+
+.card-job a {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-job a figure {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-job a ul li {
+  margin: 0 0 0 1.25rem;
+  list-style: disc;
+}
+
+.card-job span {
+  font-weight: 500;
+}
+
+.logo-jobs-company {
+  height: 4.5rem;
+  width: auto;
+  object-fit: cover;
+}
+/* --------------------- 2.8. JOB --------------------- */
+.job {
+  height: 100%;
+  width: 100%;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job h2 {
+  margin: 0 0 0.25rem 0;
+}
+
+/* ---------- 2.8.1. Title ---------- */
+.job > figure h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.job > figure {
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-job-company {
+  height: 10rem;
+  width: auto;
+  object-fit: cover;
+}
+
+/* ---------- 2.8.2. Informations ---------- */
+.list-job-infos {
+  width: 100%;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-job-info {
+  max-width: 25rem;
+  border-radius: 2rem;
+  padding: 2.5%;
+}
+
+.card-job-info p {
+  font-size: 1.25rem;
+}
+
+.card-job-info li {
+  font-size: 1.25rem;
+  margin: 0 0 0 1.5rem;
+  list-style: disc;
+}
+
+.card-job-info ul li {
+  margin: 0 0 0 3rem;
+  list-style: circle;
+}
+
+.card-job-info li a span {
+  text-decoration: underline;
+}
+
+/* --------------------- 2.9. NEWS --------------------- */
+.news {
+  height: 100%;
+  width: 100%;
+  padding: 2.5%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news h1 {
+  font-size: 3rem;
+  margin: 0.33em 0;
+}
+
+/* ---------- 2.9.1. List of articles ---------- */
+.list-news {
+  gap: 1rem;    
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* ---------- 2.9.1. Article card ---------- */
+.card-new {
+  width: 20rem;
+}
+
+.card-new figure {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-news-article {
+  height: 12rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* --------------------- 2.10. NEW --------------------- */
+.new {
+  height: 100%;
+  width: 100%;
+  padding: 0 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new article h1 {
+  font-size: 2.5rem;
+}
+
+.new article h2 {
+  max-width: 60rem;
+  font-weight: 400;
+}
+
+.content-new {
+  gap: 2rem;
+  margin: 2rem 0;
+  display: flex;
+}
+
+.content-new article:nth-child(1) {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-new article:nth-child(1) p {
+  max-width: 40rem;
+  font-size: 1.25rem;
+}
+
+.img-new {
+  height: 33.333vw;
+  min-height: 15rem;
+  max-width: 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.list-news-short {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content-new .list-news-short h2 {
+  font-weight: 600;
+}
+
+/* --------------------- 2.11. ADMIN --------------------- */
+.admin {
+  height: 100%;
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.authenticate-message {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin figure:nth-child(1) {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.admin h1 {
+  font-size: 3rem;
+}
+
+.admin h2:not(:nth-child(2)) {
+  margin-top: 2rem;
+}
+
+.picto-nut {
+  height: 2rem;
+  width: auto;
+  object-fit: cover;
+}
+
+.admin figure:nth-child(3),
+.admin figure:nth-child(8),
+.admin figure:nth-child(11),
+.admin figure:nth-child(14) {
+  max-width: 65rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin figure:nth-child(3) a,
+.admin figure:nth-child(8) a,
+.admin figure:nth-child(11) a,
+.admin figure:nth-child(14) a {
+  gap: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.picto-plus {
+  height: 2rem;
+  width: auto;
+  object-fit: cover;
+}
+
+/* ---------- 2.11.1. Table ---------- */
+.admin-table {
+  max-width: 65rem;
+  width: 100%;
+}
+
+.admin-table, 
+.admin-table th, 
+.admin-table td {
+  border: solid rgba(0,0,0,1) 0.1px;
+  border-collapse: collapse;
+}
+
+.admin-table th, 
+.admin-table td {
+  padding: 2%;
+}
+
+.admin-table th {
+  text-align: start;
+}
+
+.admin-table th:nth-child(1) {
+  width: 25%;
+}
+
+.admin-table th:nth-child(2) {
+  width: 50%;
+}
+
+.admin-table th:nth-child(3) {
+  width: 12.5%;
+}
+
+.admin-table th:nth-child(4) {
+  width: 12.5%;
+}
+
+.admin-table td div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.picto-pencil,
+.picto-cross {
+  height: 1.5rem;
+  width: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ---------- 2.11.2. Add post ---------- */
+.admin-add-post {
+  width: 100%;
+  padding: 2.5% 5%;
+  gap: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.form-add-post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-add-post legend {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.form-add-post label {
+  max-width: 30rem;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-add-post select,
+.form-add-post input {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.form-add-post textarea {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.form-add-post input[type=submit] {
+  background-color: rgba(1,102,255,255);
+  width: fit-content;
+  margin: 1.5rem 0 0 0;
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* ---------- 2.11.3. Edit post and user ---------- */
+.admin-edit-post {
+  width: 100%;
+  padding: 2.5% 5%;
+  gap: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.form-edit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-edit legend {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.form-edit label {
+  max-width: 30rem;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-edit select,
+.form-edit input {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.form-edit textarea {
+  max-width: 30rem;
+  width: 100%;
+  border: solid rgba(0,0,0,1) 2px;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+.form-edit input[type=submit] {
+  background-color: rgba(1,102,255,255);
+  width: fit-content;
+  margin: 1.5rem 0 0 0;
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  align-self: center;
+  cursor: pointer;
+}
+
+.form-edit-checkbox  {
+  max-width: 30rem;
+  width: 100%;
+  margin: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-edit-checkbox input {
+  flex: 1;
+  height: 1rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.form-edit-checkbox label {
+flex: 9;
+}
+
+/* --------------------- 2.12. ERROR --------------------- */
+.error {
+  height: 100%;
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.error button {
+  background-color: rgba(1,102,255,255);
+  padding: 0.863rem var(--2rem-in-vw);
+  border: none;
+  border-radius: 1.75rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ********************* DESKTOP ********************* */
+@media screen and (max-width: 1439px) {
+  .card-home-2 article:nth-child(1) {
+      width: 100%;
+  }
+  
+  .img-home-comment-xs {
+      display: block  ;
+  }
+  
+  .img-home-comment-xl {
+      display: none
+  }
+
+  .list-employees {
+      width: unset;
+  }
+}
+
+/* ********************* LARGE TABLET ********************* */
+@media screen and (max-width: 1023px) {
+  :root {
+      font-size: 14.4px;
+      --1rem-in-vh: 1.754vh;
+      --1_125rem-in-vh: 1.973vh;
+      --2rem-in-vh: 3.501vh;
+      --1rem-in-vw: 1vw;
+  }
+  
+  .list-news-short {
+      display: none;
+  }
+}
+
+/* ********************* MEDIUM TABLET ********************* */
+@media screen and (max-width: 767px) {
+  :root {
+      font-size: 13px;
+      --1rem-in-vh: 1.579vh;
+      --1_125rem-in-vh: 1.776vh;
+      --2rem-in-vh: 3.159vh;
+      --1rem-in-vw: 0.9vw;
+  }
+
+  .form-search-degrees {
+      width: 46rem;
+  }
+}
+
+/* ********************* SMALL TABLET ********************* */
+@media screen and (max-width: 667px) {
+  .nav-menu h2 {
+      font-size: 2.376rem;
+  }
+
+  .card-home h1 {
+      font-size: 2.7rem;
+  }
+
+  .aboutus-no-scroll {
+      height: unset;
+  }
+
+  .form-search-degrees,
+  .form-search-jobs {
+      height: unset;
+      width: 85%;
+      gap: 1.125rem;
+      padding: 1rem;
+      flex-direction: column;
+  }
+
+  .form-search-degrees article {
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+    .form-search-degrees input,
+    .form-search-jobs input {
+      width: 90%;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+}
+
+/* ********************* TABLET-PHONE ********************* */
+@media screen and (max-width: 592px) {
+  .nav-menu li {
+      height: 33%;
+  }
+
+  .nav-menu li:nth-child(1), 
+  .nav-menu li:nth-child(4) {
+      display: flex;
+  }
+
+  .nav-menu li:nth-child(2), 
+  .nav-menu li:nth-child(5) {
+      border-top: solid rgba(0,0,0,1);
+  }
+
+  .nav-menu h2 {
+      font-size: 1.568rem;
+  }
+
+  .nav-bar div button {
+      display: none;
+  }
+
+  .home-no-scroll {
+      height: unset;
+  }
+
+  .home {
+      flex-wrap: nowrap;
+  }
+
+  .card-home {
+      width: 80%;
+  }
+
+  .admin-table th:nth-child(1) {
+      width: 31.25%;
+  }
+
+  .admin-table th:nth-child(2) {
+      width: 50%;
+  }
+
+  .admin-table th:nth-child(3),
+  .admin-table td:nth-child(3) {
+      display: none;
+  }
+
+  .admin-table th:nth-child(4) {
+      width: 18.75%;
+  }
+}
+
+/* ********************* LARGE PHONE ********************* */
+@media screen and (max-width: 425px) {}
+
